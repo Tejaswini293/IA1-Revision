@@ -1,4 +1,21 @@
-gcc -g p1final.c
+ gcc -g p3original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.h
+ 
+ gcc -g p3original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.h
+ 
+ gcc -g p3original.c
+ gdb a.out
+
+
+ 
+ gcc -g p3original.c
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -16,25 +33,25 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x7fc: file p1final.c, line 16.
+Breakpoint 1 at 0x7b1: file p3original.c, line 16.
 (gdb) r
-Starting program: /home/runner/IA1-Revision/a.out 
+Starting program: /home/runner/pps-test1-Tejaswini293-6/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p1final.c:16
+Breakpoint 1, main () at p3original.c:16
 16  {
 (gdb) n
 18    input(&a,&b);
 (gdb) n
-enter the numbers
+enter two values 
 1 2
 19    add(a,b,&sum);
 (gdb) n
 20    output(a,b,sum);
 (gdb) n
-sum of 1 + 2 is 3
+sum of 1+2 is 3
 21    return 0;
 (gdb) c
 Continuing.
-[Inferior 1 (process 102) exited normally]
+[Inferior 1 (process 131) exited normally]
 (gdb) 
